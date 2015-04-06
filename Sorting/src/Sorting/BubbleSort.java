@@ -13,7 +13,11 @@ public class BubbleSort {
 		
 		boolean finishFlag = true;
 		
-		int[] sortedArray = unsortedArray;
+		int length = unsortedArray.length();
+		
+		int[] sortedArray = new int[length];
+		
+		System.arrayCopy(unsortedArray, 0, sortedArray, 0, length);
 		
 		while(finishFlag){
 		  finishFlag = false;
